@@ -76,36 +76,38 @@ Quit and save when you're done.
 
 What command did you use to do this?
 ----------
-
+ctrl x, y
+enter
 
 ==========
 9. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
 
 Write the commands that you used to do this below.
 ----------
-
+chmod u+x hello.sh
 
 ==========
 10. Run your script (hello.sh).
 
 How did you do this?  What was the output?
 ----------
+./hello.sh
 
-
+hi there!
 ==========
 11. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
 ----------
-
+-bash: ./hello.sh: No such file or directory
 
 ==========
 12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
 ----------
-
+cd /Users/Sean
 
 ==========
 13.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
 ----------
-
+cd ~
 
 ==========
 14. Type in the following command:
@@ -114,7 +116,7 @@ echo $PATH
 
 Write down the output of this command
 ----------
-
+/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 ==========
 15. Type in the following command to show all environment variables:
@@ -123,7 +125,8 @@ env
 
 Write down the last two lines of output for this command
 ----------
-
+_=/usr/bin/env
+OLDPWD=/Users/sean
 
 ==========
 16. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
@@ -136,7 +139,7 @@ echo $PATH
 
 Write down the output of the last command.  It should include your home folder.
 ----------
-
+/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/sean
 
 ==========
 17.  Go back to root (/)
@@ -147,7 +150,7 @@ hello.sh
 
 It should work now!  What is the output?
 ----------
-
+hi there!
 
 ==========
 18.  Save this file in the repository that you created from parts 1 and 2.
